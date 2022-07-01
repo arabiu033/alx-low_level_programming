@@ -18,6 +18,9 @@ int main(void)
 			else
 				e = b;
 
+			if ( b == 48 )
+				e = 47;
+			
 			if (a == 57 && b == 57)
 				e = b;
 
