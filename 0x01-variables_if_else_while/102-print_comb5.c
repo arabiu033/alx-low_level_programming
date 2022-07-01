@@ -7,11 +7,7 @@
  */
 int main(void)
 {
-	int a = 48;
-	int b = 48;
-	int c = 48;
-	int d = 49;
-	int e = 48;
+	int a, b, c, d, e;
 
 	for (a = 48; a <= 57; a++)
 	{
@@ -22,7 +18,7 @@ int main(void)
 			else
 				e = b;
 
-			if(a == 57 && b == 57)
+			if (a == 57 && b == 57)
 				e = b;
 
 			for (c = a; c <= 57; c++)
