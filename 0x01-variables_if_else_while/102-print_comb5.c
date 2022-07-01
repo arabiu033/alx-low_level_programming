@@ -7,50 +7,44 @@
  */
 int main(void)
 {
-	int a = 48, b = 48, c = 48, d = 49;
-	int e = 0;
+	int a = 48;
+	int b = 48;
+	int c = 48;
+	int d = 49;
+	int e = 48;
 
-	while (a <= 57)
+	for (a = 48; a <= 57; a++)
 	{
-		for ( ; d <= 57; d++)
+		for (b = 48; b <= 57; b++)
 		{
-			putchar(a);
-			putchar(b);
-			putchar(' ');
-			putchar(c);
-			putchar(d);
+			if (b == 57)
+				e = 47;
+			else
+				e = b;
 
-			if (e < 9898)
+			if(a == 57 && b == 57)
+				e = b;
+
+			for (c = a; c <= 57; c++)
 			{
-				putchar(44);
-				putchar(' ');
+				for (d = e + 1; d <= 57; d++)
+				{
+					putchar(a);
+					putchar(b);
+					putchar(' ');
+					putchar(c);
+					putchar(d);
+
+					if (a == 57 && b == 56 && c == 57)
+						;
+					else
+					{
+						putchar(44);
+						putchar(' ');
+					}
+				}
 			}
-			++e;
 		}
-
-		if (d > 57)
-		{
-			++c;
-			d = 48;
-		}
-
-		if (c > 57)
-		{
-			++b;
-			c = 48;
-		}
-
-		if (b > 57)
-		{
-			a++;
-			b = 48;
-		}
-
-		if (e > 9890)
-		{
-			a = 100;
-		}
-
 	}
 	putchar('\n');
 
