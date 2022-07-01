@@ -2,7 +2,11 @@
 #include <time.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ *
+ * Return: for succes
+ */
 int main(void)
 {
 	int n;
@@ -16,6 +20,5 @@ int main(void)
 		printf("%d is positive", n);
 	else
 		printf("%d is negative", n);
-	
 	return (0);
 }
