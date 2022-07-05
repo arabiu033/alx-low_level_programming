@@ -3,7 +3,7 @@
 /**
  * print_last_digit - print and return last digit
  *
- * @n: para
+ * @n: para fucking meter
  *
  * Return: int
  */
