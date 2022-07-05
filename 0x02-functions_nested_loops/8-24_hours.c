@@ -38,6 +38,8 @@ void jack_bauer(void)
 			_putchar(w + 48);
 			_putchar('\n');
 		}
+
+		x = y = z = w = 0;
 	}
 
 }
