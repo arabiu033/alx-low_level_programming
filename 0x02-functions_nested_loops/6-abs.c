@@ -3,7 +3,7 @@
 /**
  * _abs - absolute number
  *
- * @n: para
+ * @n: para fucking meter
  *
  * Return: int
  */
