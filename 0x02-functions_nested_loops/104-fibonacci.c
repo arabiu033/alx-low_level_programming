@@ -17,7 +17,7 @@ int main(void)
 		z = x + y;
 		x = y;
 		y = z;
-		printf("%lu, ", y);
+		printf("%lu, ", z);
 	}
 	return (0);
 }
