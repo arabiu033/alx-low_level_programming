@@ -14,10 +14,10 @@ int main(void)
 
 	for (i = 0; i < 98; i++)
 	{
-		printf("%lu, ", y);
 		z = x + y;
 		x = y;
 		y = z;
+		printf("%lu, ", y);
 	}
 	return (0);
 }
