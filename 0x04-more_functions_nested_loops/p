@@ -1,0 +1,6 @@
+#!/bin/bash
+rm *~
+chmod a+x *
+git add .
+git commit -m "added new update"
+git push
