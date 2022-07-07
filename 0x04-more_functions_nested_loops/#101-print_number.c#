@@ -1,0 +1,36 @@
+#include "main.h"
+
+/**
+ * print_number - print a number using characters
+ *
+ * @n: parameter
+ *
+ * Return: void nothing
+ */
+void print_number(int n)
+{
+	int holder = 1, dummy = n;
+
+	if (n < 0)
+	{
+		_putchar('-');
+		n = n * -1;
+		dummy = n;
+	}
+
+	if (n == 0)
+		_putchar('0' + n);
+
+	while (dummy > 9)
+	{
+		dummy = dummy / 10;
+		holder = holder * 10;
+	}
+	while (holder != 1)
+	{
+		x = n / holder;
+		n = n % holder;
+		holder = holder / 10;
+		_putchar('0' + x);
+	}
+}
