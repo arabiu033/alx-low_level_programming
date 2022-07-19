@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-ojojoj
-=======
 #include "main.h"
 
 /**
@@ -22,4 +19,3 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 
 	return (dest);
 }
->>>>>>> 5202a08fa19c05ae642090a8eaf2a76650266c90
