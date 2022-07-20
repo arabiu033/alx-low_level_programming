@@ -1,57 +1,61 @@
 #include "main.h"
 
+int check(char *s, int start, int end, int pair);
+int last_index(char *s);
+
 /**
- * is_palindrome - returns true if the given string is a palindrome
- *@s: string to check
- *Return: true if the given string is a palindrome
+ * check - Checker for the palindrome
+ *
+ * @s: String
+ *
+ * @start: int moves from right to left
+ *
+ * @end: int move from left to right
+ *
+ * @pair: int
+ *
+ * Return: 0 or 1
+ */
+
+int check(char *s, int start, int end, int pair)
+{
+	if ((start == end && pair != 0) || (start == end + 1 && pair == 0))
+		return (1);
+	else if (s[start] != s[end])
+		return (0);
+	else
+		return (check(s, start + 1, end - 1, pair));
+}
+
+/**
+ * last_index - Returns the last index of a string (counts the null char)
+ *
+ * @s: Pointer the string
+ *
+ * Return: int
+ */
+
+int last_index(char *s)
+{
+	int n = 0;
+
+	if (*s > '\0')
+		n += last_index(s + 1) + 1;
+
+	return (n);
+}
+
+/**
+ * is_palindrome - Check if a string is a palindrome
+ *
+ * @s: String to check
+ *
+ * Return: 0 or 1
  */
 
 int is_palindrome(char *s)
 {
-	int index = 0;
-	int len = find_strlen(s);
+	int end = last_index(s);
 
-	if (!(*s))
-		return (1);
-
-	return (check_palindrome(s, len, index));
-}
-
-/**
- * find_strlen - Returns the length of a string.
- * @s: The string to be measured.
- *
- * Return: The length of the string.
- */
-int find_strlen(char *s)
-{
-	int len = 0;
-
-	if (*(s + len))
-	{
-		len++;
-		len += find_strlen(s + len);
-	}
-
-	return (len);
-}
-
-/**
- * check_palindrome - Checks if a string is a palindrome.
- * @s: The string to be checked.
- * @len: The length of s.
- * @index: The index of the string to be checked.
- *
- * Return: If the string is a palindrome - 1.
- *         If the string is not a palindrome - 0.
- */
-int check_palindrome(char *s, int len, int index)
-{
-	if (s[index] == s[len / 2])
-		return (1);
-
-	if (s[index] == s[len - index - 1])
-		return (check_palindrome(s, len, index + 1));
-
-	return (0);
+	return (check(s, 0, end - 1, end % 2));
 }
