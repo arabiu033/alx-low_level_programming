@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void dummy();
+
 /**
  * main - a program to multiply two arguments passed
  * @argc: arguments count parameter
@@ -34,3 +36,9 @@ int main(int argc, char *argv[])
 	printf("%d\n", result);
 	return (0);
 }
+
+/**
+ * dummy - do nothing
+ * Return: void
+ */
+void dummy(){}
