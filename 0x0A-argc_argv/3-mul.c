@@ -11,25 +11,35 @@ int isDigit(char *s);
  */
 int main(int argc, char *argv[])
 {
-	int result, sig, i;
+	int i, j, result, sig;
 
-	i = argc;
+	i = j = argc;
+	result = 1;
 	sig = 0;
 	while (--i > 0 && sig != -1)
 		sig = isDigit(*(argv + i));
-	if (argc > 1 && sig == 0)
+	if (argc > 1)
 	{
-		result = atoi(argv[1]) * atoi(argv[2]);
-		printf("%d\n", result);
-		return (0);
+		while (--j > 0)
+		{
+			if (**(argv + j) == '*')
+				continue;
+			if (atoi(argv[j]) == 0 || sig == -1)
+			{
+				printf("Error\n");
+				return (1);
+			}
+			result *= atoi(argv[j]);
+		}
 	}
 	else
 	{
 		printf("Error\n");
 		return (1);
 	}
+	printf("%d\n", result);
+	return (0);
 }
-
 
 /**
  * isDigit - check whether a value is digit
