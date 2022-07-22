@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int isDigit(char *s);
 /**
  * main - a program to multiply two arguments passed
  * @argc: arguments count parameter
@@ -11,53 +10,16 @@ int isDigit(char *s);
  */
 int main(int argc, char *argv[])
 {
-	int i, j, result, sig;
-
-	i = j = argc;
-	result = 1;
-	sig = 0;
-	while (--i > 0 && sig != -1)
-		sig = isDigit(*(argv + i));
-	if (argc > 1)
+	int result;
+	if (argc == 3)
 	{
-		while (--j > 0)
-		{
-			if (**(argv + j) == '*')
-				continue;
-			if (atoi(argv[j]) == 0 || sig == -1)
-			{
-				printf("Error\n");
-				return (1);
-			}
-			result *= atoi(argv[j]);
-		}
+		result = atoi(argv[1]) * atoi(argv[2]);
+		printf("%d\n", result);
+		return (0);
 	}
 	else
 	{
 		printf("Error\n");
 		return (1);
 	}
-	printf("%d\n", result);
-	return (0);
-}
-
-/**
- * isDigit - check whether a value is digit
- * @s: string to inspect
- * Return: 0 for a number
- */
-int isDigit(char *s)
-{
-	int i = 0;
-
-	if (*(s + i) == '-')
-		i = 1;
-
-	while (*(s + i))
-	{
-		if (!(*(s + i) >= 48 && *(s + i) <= 57))
-			return (-1);
-		++i;
-	}
-	return (0);
 }
