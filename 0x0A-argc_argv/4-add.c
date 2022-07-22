@@ -10,11 +10,10 @@
  */
 int main(int argc, char *argv[])
 {
-	int sig, i, j, result;
+	int i, j, result;
 
 	i = j = argc;
 	result = 0;
-	sig = 0;
 	while (--i > 0)
 		if (**(argv + i) == '0')
 			**(argv + i) = '*';
@@ -31,14 +30,7 @@ int main(int argc, char *argv[])
 			}
 			result += atoi(argv[j]);
 		}
-		sig = 1;
 	}
-	else
-	{
-		printf("0\n");
-		sig = 0;
-	}
-	if (sig)
-		printf("%d\n", result);
+	printf("%d\n", result);
 	return (0);
 }
