@@ -15,9 +15,12 @@ int main(int argc, char *argv[])
 
 	if (argc == 2)
 	{
-		if (atoi(argv[1]) < 0)
+		if (atoi(argv[1]) <= 0)
+		{
 			printf("0\n");
-		
+			return (0);
+		}
+
 		c = count(0, atoi(argv[1]));
 		printf("%d\n", c);
 	}
