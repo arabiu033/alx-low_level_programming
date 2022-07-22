@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 {
 	long int result;
 
-	if (argc > 1 && atoi(argv[1]) && atoi(argv[2]))
+	if (argc > 1)
 	{
 		result = atol(argv[1]) * atol(argv[2]);
 		printf("%ld\n", result);
