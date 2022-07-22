@@ -40,6 +40,9 @@ int isDigit(char *s)
 {
 	int i = 0;
 
+	if (*(s + i) == '-')
+		i = 1;
+
 	while (*(s + i))
 	{
 		if (!(*(s + i) >= 48 && *(s + i) <= 57))
