@@ -72,7 +72,7 @@ To access any project you are willing to view , please proceed like this:
 
 ## Author
 
-* **Aminu Rabiu** <[arabiu033]https://github.com/arabiu033>
+* **Aminu Rabiu** <[arabiu033].https://github.com/arabiu033>
 
 ## Acknowledgements
 
