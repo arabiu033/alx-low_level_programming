@@ -39,7 +39,7 @@ int **alloc_grid(int height, int width)
 
 
 /**
- * free_grid - frees a 2 dimensional grid previously created by your
+ * free_gridd - frees a 2 dimensional grid previously created by your
  * alloc_grid function.
  * @grid: 2 dimensional array
  * @height: rows of the array
