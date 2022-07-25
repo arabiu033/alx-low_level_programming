@@ -1,1 +1,1 @@
-pointers and array projects
+# 0x05. C - Pointers, arrays and strings
