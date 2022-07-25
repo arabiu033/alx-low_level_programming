@@ -40,6 +40,9 @@ int length(char *str)
 {
 	int i = 0;
 
+	if (!str)
+		str = "";
+
 	while (*(str + i) != '\0')
 		++i;
 	return (i);
