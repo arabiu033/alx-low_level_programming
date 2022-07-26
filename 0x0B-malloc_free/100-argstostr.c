@@ -18,12 +18,12 @@ char *argstostr(int ac, char **av)
 
 	if (!ac || !av)
 		return (NULL);
-	
-	len = i = 1;
+
+	len = 1, i = 0;
 	while (i < ac)
 		len += length(av[i++]);
 
-	l = 0, i = 1;
+	l = 0, i = 0;
 	str = malloc(sizeof(char) * len);
 	if (!str)
 		return (NULL);
