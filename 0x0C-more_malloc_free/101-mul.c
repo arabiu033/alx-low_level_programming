@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+void _print(char *, int);
+char *mul(char, char *, int, char *, int);
+int check_for_digits(char **av);
+void init(char *str, int l);
+
 /**
  *  _print - moves a string one place to the left and prints the string
  *  @str: string to move
