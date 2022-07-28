@@ -1,5 +1,8 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
+
+int length(char *);
 
 /**
  * string_nconcat - concatenates two strings
@@ -20,11 +23,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (!s2)
 		s2 = "";
 
-	len = sizeof(s1);
+	len = length(s2);
 	if (n >= len)
-		n = len - 1;
+		n = len;
 
-	newStr = malloc(sizeof(s1) + n);
+	newStr = malloc(length(s1) + n);
 	if (!newStr)
 		return (NULL);
 	while (*(s1 + i) != '\0')
@@ -36,4 +39,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (*(s2 + j) != '\0' && j <= n)
 		*(newStr + i++) = *(s2 + j++);
 	return (newStr);
+}
+
+
+/**
+ * length - return the string length
+ * @str: string to get its length
+ * Return: int length
+ */
+int length(char *str)
+{
+	int i = 0;
+
+	while (*(str + i) != '\0')
+		++i;
+	return (i);
 }
