@@ -36,8 +36,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		i++;
 	}
 
-	while (*(s2 + j) != '\0' && j <= n)
+	while (*(s2 + j) != '\0' && j < n)
 		*(newStr + i++) = *(s2 + j++);
+	*(newStr + i) = '\0';
 	return (newStr);
 }
 
