@@ -9,16 +9,17 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	int i = 0;
 	char *array;
 
 	if (!nmemb || !size)
 		return (NULL);
 
-	array = malloc(nmemb * size + 1);
+	array = malloc(nmemb * size);
 	if (!array)
 		return (NULL);
 
-	while (nmemb)
-		array[nmemb--] = 0;
+	while (i < (nmemb * size))
+		array[i] = 0;
 	return (array);
 }
