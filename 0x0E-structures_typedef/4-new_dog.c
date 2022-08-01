@@ -18,6 +18,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (!name || age < 0 || !owner)
 		return (NULL);
 	d = malloc(sizeof(struct dog));
+	if (!d)
+		return (NULL);
 
 	d->name = malloc(sizeof(char) * len(name));
 	if (!d->name)
