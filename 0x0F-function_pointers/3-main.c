@@ -19,7 +19,7 @@ int main(int ac, char *av[])
 	      || av[2][0] == '/' || av[2][0] == '%'))
 	{
 		printf("Error\n");
-		exit(98);
+		exit(99);
 	}
 	if ((av[2][0] == '/' || av[2][0] == '%') && atoi(av[3]) == 0)
 	{
