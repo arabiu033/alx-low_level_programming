@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 int op_add(int a, int b);
 int op_sub(int a, int b);
