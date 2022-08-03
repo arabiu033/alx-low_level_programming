@@ -1,8 +1,8 @@
-#include <stdio.h>
-#include <stdlib.h>
-
 #ifndef HEAD
 #define HEAD
+
+#include <stdio.h>
+#include <stdlib.h>
 
 int op_add(int a, int b);
 int op_sub(int a, int b);
