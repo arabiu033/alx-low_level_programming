@@ -36,7 +36,7 @@ void print_all(const char * const format, ...)
 			printf("%d", va_arg(arr, int));
 			break;
 		case 'c':
-			printf("%c", '\0' + va_arg(arr, int));
+			printf("%c", va_arg(arr, int));
 			break;
 		case 'f':
 			printf("%f", va_arg(arr, double));
