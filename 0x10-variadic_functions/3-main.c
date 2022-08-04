@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	print_all("ceeeeeeeis", 'B', 3, "stSchool");
+	print_all("cessf", 'B', "", "stSchool", 3.5);
 	return (0);
 }
