@@ -44,6 +44,7 @@ void print_all(const char * const format, ...)
 		default:
 			sig = 0;
 			++count;
+			break;
 		}
 		++i;
 		if (count && sig)
