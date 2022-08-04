@@ -39,7 +39,7 @@ void print_all(const char * const format, ...)
 			printf("%c", va_arg(arr, int));
 			break;
 		case 'f':
-			printf("%f", va_arg(arr, double));
+			printf("%fff", va_arg(arr, double));
 			break;
 		default:
 			sig = 0;
