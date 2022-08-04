@@ -13,7 +13,6 @@ void print_all(const char * const format, ...)
 	char p;
 	char *s;
 
-	va_start(arr, format);
 	while (format[i] != '\0')
 	{
 		p = format[i];
@@ -22,6 +21,7 @@ void print_all(const char * const format, ...)
 		++i;
 	}
 
+	va_start(arr, format);
 	i = 0;
 	while (format[i] != '\0')
 	{
