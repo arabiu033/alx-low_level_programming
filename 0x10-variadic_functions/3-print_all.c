@@ -51,6 +51,7 @@ void print_all(const char * const format, ...)
 		sig = 1;
 	}
 	printf("\n");
+	va_end(arr);
 }
 
 /**
