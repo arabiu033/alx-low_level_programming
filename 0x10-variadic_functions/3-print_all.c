@@ -30,7 +30,7 @@ void print_all(const char * const format, ...)
 		{
 		case 's':
 			s = va_arg(arr, char *);
-		        s ? printf("%s", s) : printf("(nil)");
+			printf("%s", s ? s : "(nil)");
 			break;
 		case 'i':
 			printf("%d", va_arg(arr, int));
