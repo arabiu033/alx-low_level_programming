@@ -30,8 +30,7 @@ void print_all(const char * const format, ...)
 		{
 		case 's':
 			s = va_arg(arr, char *);
-			s = "(nil)";
-			printf("%s", s);
+			printf("%s", s ? s : "(nil)");
 			break;
 		case 'i':
 			printf("%d", va_arg(arr, int));
@@ -40,7 +39,7 @@ void print_all(const char * const format, ...)
 			printf("%c", va_arg(arr, int));
 			break;
 		case 'f':
-			printf("%f", va_arg(arr, double));
+			printf("%.1f", va_arg(arr, double));
 			break;
 		default:
 			sig = 0;
