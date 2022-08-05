@@ -23,7 +23,7 @@ void print_all(const char * const format, ...)
 
 	va_start(arr, format);
 	i = 0;
-	while (format[i])
+	while (format[i] && format)
 	{
 		--count;
 		switch (format[i])
