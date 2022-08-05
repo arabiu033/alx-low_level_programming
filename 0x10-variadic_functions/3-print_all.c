@@ -1,6 +1,6 @@
 #include "variadic_functions.h"
 
-int dummy(const char * const fm);
+void dummy(void);
 /**
  * print_all - function that prints anything
  * @format: list of types of arguments passed to the function
@@ -15,10 +15,10 @@ void print_all(const char * const format, ...)
 
 	while (format[i] != '\0')
 	{
-	 	p = format[i];
-	 	if (p == 's' || p == 'c' || p == 'f' || p == 'i')
-	 		++count;
-	 	++i;
+		p = format[i];
+		if (p == 's' || p == 'c' || p == 'f' || p == 'i')
+			++count;
+		++i;
 	}
 
 	va_start(arr, format);
@@ -47,7 +47,6 @@ void print_all(const char * const format, ...)
 			break;
 		}
 		++i;
-
 		if (count && sig)
 			printf(", ");
 		sig = 1;
@@ -58,14 +57,8 @@ void print_all(const char * const format, ...)
 
 /**
  * dummy - a dummy fuction
- * @fm: para
  * Return: void
  */
-int dummy(const char * const fm)
-{
-	int i = 0;
-
-	while (fm[i])
-		++i;
-	return (i);
+void dummy(void)
+{)
 }
