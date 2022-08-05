@@ -68,7 +68,7 @@
 
 ### Try It On Your Machine computer:	
 ```bash
-git clone https://github.com/edward0rtiz/holbertonschool-low_level_programming.git
+git clone https://github.com/arabiu033/alx-low_level_programming.git
 cd 0x01-variables_if_else_while
 gcc -Wall -pedantic -Werror -Wextra FILENAME.c -o NEW_FILE_NAME 
 ```
