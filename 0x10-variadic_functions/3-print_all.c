@@ -11,16 +11,16 @@ void print_all(const char * const format, ...)
 	va_list arr;
 	int count = 0, i = 0, sig = 1;
 	char *s;
-	int n = dummy(format);
-	/**
-	 *while (format[i] != '\0')
-	 *{
-	 *	p = format[i];
-	 *	if (p == 's' || p == 'c' || p == 'f' || p == 'i')
-	 *		++count;
-	 *	++i;
-	 *}
-	 */
+	char p;
+
+	while (format[i] != '\0')
+	{
+	 	p = format[i];
+	 	if (p == 's' || p == 'c' || p == 'f' || p == 'i')
+	 		++count;
+	 	++i;
+	}
+
 	va_start(arr, format);
 	i = 0;
 	while (format[i])
@@ -47,11 +47,8 @@ void print_all(const char * const format, ...)
 			break;
 		}
 		++i;
-		/**
-		 * if (count && sig)
-		 *  printf(", ");
-		*/
-		if (i < n - 1 && sig)
+
+		if (count && sig)
 			printf(", ");
 		sig = 1;
 	}
