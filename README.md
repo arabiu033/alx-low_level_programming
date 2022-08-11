@@ -25,8 +25,8 @@
 | [0x0E-structures_typedef](https://github.com/arabiu033/alx-low_level_programming/tree/main/0x0E-structures_typedef)| Implementation of structures typedef|
 | [0x0F-function_pointers](https://github.com/arabiu033/alx-low_level_programming/tree/main/0x0F-function_pointers)|Scripts to implement function pointers in data structures|
 | [0x10-variadic_functions](https://github.com/arabiu033/alx-low_level_programming/tree/main/0x10-variadic_functions)|Scripts of variadic functions|
-<!-- | [0x12-singly_linked_lists](https://github.com/arabiu033/alx-low_level_programming/tree/main/0x12-singly_linked_lists)|Single linked list scripts|
-| [0x13-more_singly_linked_lists](https://github.com/arabiu033/alx-low_level_programming/tree/main/0x13-more_singly_linked_lists)|Profundization on the behaviour of single linked lists|
+| [0x12-singly_linked_lists](https://github.com/arabiu033/alx-low_level_programming/tree/main/0x12-singly_linked_lists)|Single linked list scripts|
+<!-- | [0x13-more_singly_linked_lists](https://github.com/arabiu033/alx-low_level_programming/tree/main/0x13-more_singly_linked_lists)|Profundization on the behaviour of single linked lists|
 | [0x14-bit_manipulation](https://github.com/arabiu033/alx-low_level_programming/tree/main/0x14-bit_manipulation)|Script using bit manipulation |
 | [0x15_file_io](https://github.com/arabiu033/alx-low_level_programming/tree/main/0x15_file_io)| Understanding fileI/O
 | [0x17-doubly_linked_lists](https://github.com/arabiu033/alx-low_level_programming/tree/main/0x17-doubly_linked_lists)|Implementation of scripts using double single linked lists|
