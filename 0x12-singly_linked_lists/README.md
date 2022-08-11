@@ -21,13 +21,13 @@ At the end of this project, I was able to solve this questions:
 
 | Filename |
 | ------ |
-| [0-print_list.c](./0x12-singly_linked_lists/0-print_list.c)|
-| [1-list_len.c](./0x12-singly_linked_lists/1-list_len.c)|
-| [2-add_node.c](./0x12-singly_linked_lists/2-add_node.c)|
-| [3-add_node_end.c](./0x12-singly_linked_lists/3-add_node_end.c)|
-| [4-free_list.c](./0x12-singly_linked_lists/4-free_list.c)|
-| [100-first.c](./0x12-singly_linked_lists/100-first.c)|
-| [101-hello_holberton.asm](./0x12-singly_linked_lists/101-hello_holberton.asm)|
+| [0-print_list.c](./0-print_list.c)|
+| [1-list_len.c](./1-list_len.c)|
+| [2-add_node.c](./2-add_node.c)|
+| [3-add_node_end.c](./3-add_node_end.c)|
+| [4-free_list.c](./4-free_list.c)|
+| [100-first.c](./100-first.c)|
+| [101-hello_holberton.asm](./101-hello_holberton.asm)|
 
 ## Additional info :construction:
 ### Resources
