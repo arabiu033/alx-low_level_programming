@@ -8,3 +8,13 @@
 
 
 ## Learning Objectives :bookmark_tabs:
+
+* How to write a compilable c file
+* Different stages of achieveing excutable c file
+      * Preprocessing
+      * compilation
+      * assembly
+      * linking
+* The main fuction and why its importance
+* what are headers
+* How to find the right header to include in your source code when using a standard library function
