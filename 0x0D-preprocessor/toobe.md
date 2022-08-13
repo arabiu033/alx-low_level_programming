@@ -12,10 +12,10 @@
 * How to write a compilable c file
 * Different stages of achieveing excutable c file
 
-      | Preprocessing |
-      | compilation |
-      | assembly |
-      | linking |
+      - Preprocessing
+      - compilation
+      - assembly
+      - linking
       
 * The main fuction and why its importance
 * what are headers
