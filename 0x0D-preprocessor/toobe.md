@@ -99,7 +99,7 @@ int main(void)
 
 -------------------------------
 
-4 - Using the 0-main.c file, produce an excutable file. The executable file should be bering your names (e.g John)
+4 - Using the 0-main.c file, produce an excutable file. The executable file should be bearing your names (e.g John)
 
 `[Enter the full command use to produce the executable file]`
 
