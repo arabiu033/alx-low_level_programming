@@ -7,7 +7,7 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	int i = 1;
+	int i = 0;
 	listint_t *holder = malloc(sizeof(listint_t));
 
 	if (!holder)
@@ -16,6 +16,7 @@ size_t print_listint(const listint_t *h)
 	{
 		printf("%d\n", h->n);
 		holder = h->next;
+		++i;
 	}
 
 	while (holder)
