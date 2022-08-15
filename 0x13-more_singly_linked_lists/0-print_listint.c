@@ -8,7 +8,7 @@
 size_t print_listint(const listint_t *h)
 {
 	int i = 1;
-	listint_t *holder = malloc(sizeof(h));
+	listint_t *holder = malloc(sizeof(listint_t));
 
 	if (!holder)
 		return (0);
