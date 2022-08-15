@@ -11,7 +11,10 @@ size_t print_listint(const listint_t *h)
 	listint_t *holder = malloc(sizeof(listint_t));
 
 	if (!holder)
-		return (0);
+	{
+		printf("Error\n")
+		return (1);
+	}
 	if (h)
 	{
 		printf("%d\n", h->n);
