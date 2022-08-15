@@ -12,7 +12,7 @@ size_t print_listint(const listint_t *h)
 
 	if (!holder)
 	{
-		printf("Error\n")
+		printf("Error\n");
 		return (1);
 	}
 	if (h)
