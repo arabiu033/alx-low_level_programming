@@ -8,14 +8,8 @@
 size_t print_listint(const listint_t *h)
 {
 	int i = 0;
-	listint_t *holder = malloc(sizeof(listint_t));
+	listint_t *holder;
 
-	if (!holder)
-	{
-		printf("Error\n");
-		return (1);
-	}
-	holder = NULL;
 	if (h)
 	{
 		printf("%d\n", h->n);
@@ -29,6 +23,5 @@ size_t print_listint(const listint_t *h)
 		holder = holder->next;
 		++i;
 	}
-	free(holder);
 	return (i);
 }
