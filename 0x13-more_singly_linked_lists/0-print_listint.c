@@ -15,6 +15,7 @@ size_t print_listint(const listint_t *h)
 		printf("Error\n");
 		return (1);
 	}
+	holder = NULL;
 	if (h)
 	{
 		printf("%d\n", h->n);
