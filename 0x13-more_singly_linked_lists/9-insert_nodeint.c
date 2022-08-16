@@ -1,47 +1,64 @@
 #include "lists.h"
 
 /**
- * insert_nodeint_at_index - insert a node in a given position.
- * @head: data type pointer the head/next node
- * @idx: data type unsigned int index
- * @n: data type int
- * Return: new_node
+ * insert_nodeint_at_index - returns the nth node of a linked list
+ * @head: pointer to the head of the list
+ * @idx: index of the node to be added
+ * @n: content of the new node
+ *
+ * Return: the address of the node
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *tmp_node, *new_node;
-	unsigned int counter = 0;
+	listint_t *new_node = NULL;
+	listint_t *previous_node = NULL;
+	unsigned int i = 0;
 
-	if (head == NULL && *head == NULL)
+	new_node = malloc(sizeof(listint_t));
+	if (new_node == NULL || idx > listint_len(*head))
+	{
+		free(new_node);
 		return (NULL);
-
-	tmp_node = *head;
-	if (idx == 0)
-	{
-		new_node = malloc(sizeof(listint_t));
-
-		if (new_node == 0)
-			return (NULL);
-		new_node->n = n;
-		new_node->next = tmp_node;
-		*head = new_node;
-		return (new_node);
 	}
-	while (tmp_node)
+	new_node->n = n;
+	new_node->next = NULL;
+	while (head != NULL)
 	{
-		if (counter + 1 == idx)
+		if (i == idx)
 		{
-			new_node = malloc(sizeof(listint_t));
-
-			if (new_node == 0)
-				return (NULL);
-			new_node->n = n;
-			new_node->next = tmp_node->next;
-			tmp_node->next = new_node;
+			if (i == 0)
+			{
+				new_node->next = *head;
+				*head = new_node;
+				return (new_node);
+			}
+			new_node->next = previous_node->next;
+			previous_node->next = new_node;
 			return (new_node);
 		}
-		tmp_node = tmp_node->next;
-		counter++;
+		else if ((i + 1) == idx)
+			previous_node = *head;
+		head = &((*head)->next);
+		i++;
 	}
 	return (NULL);
+}
+
+/**
+ * listint_len - counts the number of nodes in a linked list
+ * @h: head of the list
+ *
+ * Return: the number of elements
+ */
+size_t listint_len(const listint_t *h)
+{
+	const listint_t *cursor = h;
+	size_t count = 0;
+
+	while (cursor != NULL)
+	{
+		count += 1;
+		cursor = cursor->next;
+	}
+	return (count);
 }
