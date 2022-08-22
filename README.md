@@ -27,8 +27,8 @@
 | [0x10-variadic_functions](https://github.com/arabiu033/alx-low_level_programming/tree/main/0x10-variadic_functions)|Scripts of variadic functions|
 | [0x12-singly_linked_lists](https://github.com/arabiu033/alx-low_level_programming/tree/main/0x12-singly_linked_lists)|Single linked list scripts|
 | [0x13-more_singly_linked_lists](https://github.com/arabiu033/alx-low_level_programming/tree/main/0x13-more_singly_linked_lists)|Profundization on the behaviour of single linked lists|
-<!-- | [0x14-bit_manipulation](https://github.com/arabiu033/alx-low_level_programming/tree/main/0x14-bit_manipulation)|Script using bit manipulation |
-| [0x15_file_io](https://github.com/arabiu033/alx-low_level_programming/tree/main/0x15_file_io)| Understanding fileI/O
+| [0x14-bit_manipulation](https://github.com/arabiu033/alx-low_level_programming/tree/main/0x14-bit_manipulation)|Script using bit manipulation |
+<!-- | [0x15_file_io](https://github.com/arabiu033/alx-low_level_programming/tree/main/0x15_file_io)| Understanding fileI/O
 | [0x17-doubly_linked_lists](https://github.com/arabiu033/alx-low_level_programming/tree/main/0x17-doubly_linked_lists)|Implementation of scripts using double single linked lists|
 | [0x18-dinamyc_libraries](https://github.com/arabiu033/alx-low_level_programming/tree/main/0x18-dinamyc_libraries)|Scripts using dinamyc libraries|
 | [0x19-stacks_queues_lifo_fifo](https://github.com/edward0rtiz/monty/tree/df9ab3ad3ae6d985abefed3d2b5919577256f8b5)| Data structures FIlo and FIFO in C|
