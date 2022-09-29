@@ -8,7 +8,7 @@
 size_t print_dlistint(const dlistint_t *h)
 {
 	int count;
-	dlistint_t *tranverse;
+	dlistint_t *tranverse, *holder;
 
 	if (!h)
 		return (0);
@@ -16,6 +16,7 @@ size_t print_dlistint(const dlistint_t *h)
 	tranverse->n = h->n;
 	tranverse->next = h->next;
 	tranverse->prev = h->prev;
+	holder = tranverse;
 	count = 0;
 	while (tranverse)
 	{
@@ -23,6 +24,6 @@ size_t print_dlistint(const dlistint_t *h)
 		tranverse = tranverse->next;
 		++count;
 	}
-
+	free(holder);
 	return (count);
 }
