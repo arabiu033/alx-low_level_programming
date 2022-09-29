@@ -17,6 +17,10 @@ size_t dlistint_len(const dlistint_t *h)
 	tranverse->next = h->next;
 	tranverse->prev = h->prev;
 	holder = tranverse;
+
+	while (tranverse->prev)
+		tranverse = tranverse->prev;
+
 	while (tranverse)
 	{
 		tranverse = tranverse->next;
