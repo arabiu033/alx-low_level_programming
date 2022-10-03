@@ -30,8 +30,8 @@
 | [0x14-bit_manipulation](https://github.com/arabiu033/alx-low_level_programming/tree/main/0x14-bit_manipulation)|Script using bit manipulation |
 | [0x15_file_io](https://github.com/arabiu033/alx-low_level_programming/tree/main/0x15_file_io)| Understanding fileI/O
 | [0x17-doubly_linked_lists](https://github.com/arabiu033/alx-low_level_programming/tree/main/0x17-doubly_linked_lists)|Implementation of scripts using double single linked lists|
-<!-- | [0x18-dinamyc_libraries](https://github.com/arabiu033/alx-low_level_programming/tree/main/0x18-dinamyc_libraries)|Scripts using dinamyc libraries|
-| [0x19-stacks_queues_lifo_fifo](https://github.com/edward0rtiz/monty/tree/df9ab3ad3ae6d985abefed3d2b5919577256f8b5)| Data structures FIlo and FIFO in C|
+| [0x18-dinamyc_libraries](https://github.com/arabiu033/alx-low_level_programming/tree/main/0x18-dinamyc_libraries)|Scripts using dinamyc libraries|
+<!-- | [0x19-stacks_queues_lifo_fifo](https://github.com/edward0rtiz/monty/tree/df9ab3ad3ae6d985abefed3d2b5919577256f8b5)| Data structures FIlo and FIFO in C|
 | [0x1A-hash_tables](https://github.com/arabiu033/alx-low_level_programming/tree/main/0x1A-hash_tables)| Mapnipulation and implementation of hash tables using C|
 | [0x1B-sorting_algorithms](https://github.com/arabiu033/alx-low_level_programming/tree/main/0x02-functions_nested_loops)| Implementation of sorting algorithms|
 | [0x1C-makefiles](https://github.com/arabiu033/alx-low_level_programming/tree/main/0x02-functions_nested_loops)|Make files scipts made in C|
