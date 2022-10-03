@@ -1,6 +1,6 @@
 # Holbertonschool-low_level_programming :floppy_disk:
 
-[![C|C](https://img.shields.io/badge/C-491%20commits-orange.svg)](https://sourcerer.io/arabiu033)
+[![C|C](https://img.shields.io/badge/C-548%20commits-orange.svg)](https://sourcerer.io/arabiu033)
 
 > Low level programming projects based in C language
 
