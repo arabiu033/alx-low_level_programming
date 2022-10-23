@@ -12,6 +12,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int index;
 	hash_node_t *new_node;
 
+	if (!ht)
+		ht = hash_table_create(1024);
+
 	index = key_index((unsigned char *)key, 1024);
 	new_node = malloc(sizeof(hash_node_t));
 
