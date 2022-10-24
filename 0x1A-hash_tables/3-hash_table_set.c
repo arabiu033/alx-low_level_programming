@@ -26,10 +26,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (!new_node->key || !new_node->value)
 		return (0);
 
-	for (i = index
 	if (!ht->array[index])
 	{
-		if (strcmp(new_node->key, ht->array[index]->key))
+		if (!strcmp(new_node->key, ht->array[index]->key))
 		{
 			ht->array[index]->value = strdup(value);
 			return (1);
