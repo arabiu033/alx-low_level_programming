@@ -2,7 +2,9 @@
 
 [![C|C](https://img.shields.io/badge/C-548%20commits-orange.svg)](https://sourcerer.io/arabiu033)
 
-> Low level programming projects based in C language
+> Low-level programming projects in C. 
+> 
+> The commit message appears to be the same in some of the directories here because I was foolishly using a script I wrote to automate github commits. I'm really kicking myself now.
 
 # Projects inside this repo :bike:
 
