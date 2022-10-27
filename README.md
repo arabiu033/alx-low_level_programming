@@ -4,7 +4,7 @@
 
 > Low-level programming projects in C. 
 > 
-> The commit message appears to be the same in some of the directories here because I was foolishly using a script I wrote to automate github commits. I'm really kicking myself now.
+> The commit message appears to be the same in some of the directories here, that's because I was foolishly using a script I wrote to automate github commits. I'm really kicking myself now.
 
 # Projects inside this repo :bike:
 
