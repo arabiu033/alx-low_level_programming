@@ -1,3 +1,6 @@
 [submodule "0x19-stacks_queues_lifo_fifo"]
 	path = 0x19-stacks_queues_lifo_fifo
 	url = https://github.com/arabiu033/monty.git
+[submodule "0x1B_Sorting_algorithms_and_Big_O"]
+	path = 0x1B_Sorting_algorithms_and_Big_O
+	url = https://github.com/arabiu033/sorting_algorithms.git
