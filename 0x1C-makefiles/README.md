@@ -26,13 +26,13 @@ At the end of this project, I was able to understand:
 
 | Filename |
 | ------ |
-| [0-Makefile](https://github.com/arabiu033/alx-low_level_programming/blob/master/0x1C-makefiles/0-Makefile)|
-| [1-Makefile](https://github.com/arabiu033/alx-low_level_programming/blob/master/0x1C-makefiles/1-Makefile)|
-| [2-Makefile](https://github.com/arabiu033/alx-low_level_programming/blob/master/0x1C-makefiles/2-Makefile)|
-| [3-Makefile](https://github.com/arabiu033/alx-low_level_programming/blob/master/0x1C-makefiles/3-Makefile)|
-| [4-Makefile](https://github.com/arabiu033/alx-low_level_programming/blob/master/0x1C-makefiles/4-Makefile)|
-| [5-island_perimeter.py](https://github.com/arabiu033/alx-low_level_programming/blob/master/0x1C-makefiles/5-island_perimeter.py)|
-| [100-Makefile](https://github.com/arabiu033/alx-low_level_programming/blob/master/0x1C-makefiles/100-Makefile)|
+| [0-Makefile](https://github.com/arabiu033/alx-low_level_programming/blob/main/0x1C-makefiles/0-Makefile)|
+| [1-Makefile](https://github.com/arabiu033/alx-low_level_programming/blob/main/0x1C-makefiles/1-Makefile)|
+| [2-Makefile](https://github.com/arabiu033/alx-low_level_programming/blob/main/0x1C-makefiles/2-Makefile)|
+| [3-Makefile](https://github.com/arabiu033/alx-low_level_programming/blob/main/0x1C-makefiles/3-Makefile)|
+| [4-Makefile](https://github.com/arabiu033/alx-low_level_programming/blob/main/0x1C-makefiles/4-Makefile)|
+| [5-island_perimeter.py](https://github.com/arabiu033/alx-low_level_programming/blob/main/0x1C-makefiles/5-island_perimeter.py)|
+| [100-Makefile](https://github.com/arabiu033/alx-low_level_programming/blob/main/0x1C-makefiles/100-Makefile)|
 
 ## Additional info :construction:
 ### Resources
