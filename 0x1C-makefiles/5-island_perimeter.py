@@ -23,6 +23,4 @@ def island_perimeter(grid):
                     count.append(j)
 
     width = len(count)
-    print(height)
-    print(width)
     return (width + height) * 2
