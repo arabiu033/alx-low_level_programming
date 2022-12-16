@@ -1,29 +1,28 @@
 #!/usr/bin/python3
 """ island  perimeter """
 
+
 def island_perimeter(grid):
     """
     returns the perimeter of the island described in grid
     """
-    height = 0
-    width = 0
-    count = 0
+    count = []
 
     for j in range(len(grid[0])):
         for k in range(len(grid)):
             if grid[k][j]:
-                count += 1
-        if count > height:
-            height = count
-        count = 0;
+                if k not in count:
+                    count.append(k)
 
-    count = 0
+    height = len(count)
+    count = []
     for i in range(len(grid)):
         for j in range(len(grid[i])):
             if grid[i][j]:
-                count += 1
-        if count > width:
-            width = count
-        count = 0
+                if j not in count:
+                    count.append(j)
 
+    width = len(count)
+    print(height)
+    print(width)
     return (width + height) * 2
